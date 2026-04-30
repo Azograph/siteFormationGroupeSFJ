@@ -1,0 +1,125 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+.h2Formateurs {
+    color: rgb(26, 0, 59);
+}
+
+h3 {
+    margin: 5px;
+    color: rgb(62, 33, 88);
+}
+
+h4 {
+    margin: 5px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(136, 96, 172);
+}
+
+img {
+    width: 195px;
+    border-radius: 10px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: rgb(136, 96, 172);
+    border-radius: 10px;
+    color: rgb(240, 240, 240);
+}
+
+ul {
+    text-align: left;
+    margin-top: 5px;
+    color: rgb(62, 33, 88);
+}
+
+td {
+    color: rgb(62, 33, 88);
+}
+li {
+    font-style: italic;
+    color: rgb(136, 96, 172);
+}
+
+.squad {
+    background-color: rgb(26, 0, 59);
+}
+
+#fullStack {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1267px;
+    padding-bottom: 20px;
+}
+
+.headCard{
+    height: 80px;;
+}
+
+.hero {
+    text-align: center;
+    background-color: rgb(229, 225, 240);
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.formateurs {
+    background-color:rgb(229, 225, 240);
+}
+
+#grid-formation {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1267px;
+    padding-bottom: 20px;
+}
+
+.card-formation{
+    display: flex;
+    text-align: left;
+    background-color: rgb(136, 96, 172);
+    width: 400px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.textCardF {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+p {
+    margin: 5px;
+    color: rgb(230, 216, 238);
+}
