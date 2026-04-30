@@ -1,9 +1,16 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    background-color: rgb(26, 0, 59);
+    margin: 0;
 }
 h2 {
     text-align: center;
-
+    color: white;
+    margin: 0px;
+    padding: 20px;
 }
 
 h3 {
@@ -24,6 +31,7 @@ h4 {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1267px;
+    padding-bottom: 20px;
 }
 
 .headCard{
