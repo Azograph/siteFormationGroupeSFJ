@@ -1,60 +1,623 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
     <title>FullStack Squad</title>
 </head>
 <body>
     <header>
-        <div class ="logo"><img src="/images/logo-customise.png" height="50px" width="250px"  alt="logo FullStack Squad">
+        <div class ="logo"><img src="./image/autre image/logo-customise.png" alt="logo FullStack Squad">
         </div>
         <section id="titre">
-            <h1> Session Dev31 ERN 26-01: Full Stack Squad</h1>
-        <h4>Adrar-Developpeurs web &web mobile</h4>
+            <h1> Session Dev31 ERN 26-01 : Full Stack Squad</h1>
+            <h4>Adrar-Developpeurs web & web mobile</h4>
         </section>
     </header>
+
     <main>
+
         <section class="banniere">
             <p class="paragraphe">La formation DEV WEB</p>
             <p class="paragraphe">ses formaterus et la Full Stack Squad</p>
         </section>
-        <section class="grid-formation">
-            <h2>Les formateurs</h2>
-            <div class="card-formation">
-                <img src="" alt="pixel art representant la coordinatrice pédagogique">
-                <h3>Sophie POULAKOS</h3>
-                <p>Mother of Full Stack Squad</p>
-                <p>Coordinatrice pédagogique</p>
-            </div>
-            <div class="card-formation">
-                <img src="" alt="pixel art representant le formateur référent">
-                <h3>Jean François PECH</h3>
-                <p>Surfeur du web</p>
-                <p>Formateur référent</p>
-            </div>
-            <div class="card-formation">
-                <img src="" alt="pixel art representant prof PHP">
-                <h3>Yoann DEPRIESTER</h3>
-                <p>Maitre de la patience</p>
-                <p>PHP/Algo</p>
-            </div>
-            <div class="card-formation">
-                <img src="" alt="pixel art representant prof design">
-                <h3>Yann SAMSON</h3>
-                <p>Produit design</p>
-                <p>Design/HTML-CSS</p>
-            </div>
-            <div class="card-formation">
-                <img src="" alt="pixel art representant prof anglais">
-                <h3>Catherine COSTENOBLE</h3>
-                <p>Lady catherine - Devoreuse de chocolat</p>
-                <p>English teacher</p>
+
+        <section class="formateurs">
+            <h2 class="h2Formateurs">Les formateurs</h2>
+            <div id="grid-formation">
+                <div class="card-formation">
+                    <img src="image/sophie.png" alt="pixel art representant la coordinatrice pédagogique">
+                    <div class="textCardF">
+                        <h3>Sophie POULAKOS</h3>
+                        <p>Mother of Full Stack Squad</p>
+                        <p>Coordinatrice pédagogique</p>
+                    </div>
+                </div>
+                <div class="card-formation ">
+                    <img src="image/jeff.png" alt="pixel art representant le formateur référent">
+                    <div class="textCardF">
+                        <h3>Jean François PECH</h3>
+                        <p>Surfeur du web</p>
+                        <p>Formateur référent / JavaScript</p>
+                    </div>
+                </div>
+                <div class="card-formation">
+                    <img src="image/yoann.png" alt="pixel art representant prof PHP">
+                    <div class="textCardF">
+                        <h3>Yoann DEPRIESTER</h3>
+                        <p>Maitre de la patience</p>
+                        <p>PHP / Algo</p>
+                    </div>
+                </div>
+                <div class="card-formation">
+                    <img src="image/yann.png" alt="pixel art representant prof design">
+                    <div class="textCardF">
+                        <h3>Yann SAMSON</h3>
+                        <p>Produit design</p>
+                        <p>Design / HTML-CSS</p>
+                    </div>
+                </div>
+                <div class="card-formation">
+                    <img src="image/catherine.png" alt="pixel art representant prof anglais">
+                    <div class="textCardF">
+                        <h3>Catherine COSTENOBLE</h3>
+                        <p>Devoreuse de chocolat</p>
+                        <p>English teacher</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="grid-stagiaire">
-        <h2>Full Stack Squad</h2>
+
+        <section class="squad">
+            <h2>Full stack squad </h2>
+            <div id="fullStack">
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Aaron</h3>
+                        <h4> Mode furtif activé  </h4>
+                    </div>
+                    <img src="image/aaron.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Energique</li>
+                                                    <li> Objectif : 100 pompes</li>
+                                                    <li> Privé de repas le midi</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Fumeur </li>
+                                                    <li> Courbature </li>
+                                                    <li> Transpiration </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Coline </h3>
+                        <h4>  L'art de la répartie (dans la pensée) </h4>
+                    </div>
+                    <img src="image/coline.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button> 
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Bien nourrie </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Digestion </li>
+                                                    <li> A côté du grincheux </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Nathan</h3>
+                        <h4>  Le professeur de l'ombre </h4>
+                    </div>
+                    <img src="image/nathan.png" alt="">
+                    <div class="containerP">
+                        <div class="replie">
+                            <button class="bouton-deplier"> + </button>   
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Érudit </li>
+                                                    <li> Bien nourri </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Érudit </li>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Stanley</h3>
+                        <h4> "Oui, je vois de... Oh un papillon"</h4>
+                    </div>
+                    <img src="image/stanley.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button> 
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li>Hyperactif</li>
+                                                    <li>Privé de repas le midi</li>
+                                                    <li>A vécu plusieurs vies</li>
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li>Hyperactif</li>
+                                                    <li>A vécu plusieurs vies</li>
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Sullyvan</h3>
+                        <h4> Sponsorisé par Vans</h4>
+                    </div>
+                    <img src="image/sullyvan.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>  
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Energique </li>
+                                                    <li> Musclé </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Courbature </li>
+                                                    <li> Transpiration </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Thiago</h3>
+                        <h4>Professionnel de Duolingo </h4>
+                    </div>
+                    <img src="image/thiago.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button> 
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Mega sieste </li>
+                                                    <li> Polyglotte </li>
+                                                    <li> Bien nourri </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Réveil difficile </li>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Mustafa</h3>
+                        <h4> Le coach sportif, maître de la callisthénie </h4>
+                    </div>
+                    <img src="image/mustafa.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>  
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Energique </li>
+                                                    <li> Musclé </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Courbature </li>
+                                                    <li> Transpiration </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3>Camille </h3>
+                        <h4> Gaston la Gaffe </h4>
+                    </div>
+                    <img src="image/camille.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Bien nourri </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Maladroit </li>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3> Rafaël </h3>
+                        <h4> Maitre de la dactylographie </h4>
+                    </div>
+                    <img src="image/rafael_.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Rapide du clavier </li>
+                                                    <li> Bien nourri </li>
+                                                    
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Digestion </li>
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3> Adel </h3>
+                        <h4> Dresseur de mille pattes </h4>
+                    </div>
+                    <img src="image/adel.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Energique </li>
+                                                    <li> Musclé </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Courbature </li>
+                                                    <li> Transpiration </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3> Lucas </h3>
+                        <h4> Le grincheux heureux </h4>
+                    </div>
+                    <img src="image/lucas.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Bien nourri </li>
+                                                    <li> Humour noir </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> A côté de Coline </li>
+                                                    <li> Fumeur </li>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3> Juliette </h3>
+                        <h4> Annonciatrice de météo </h4>
+                    </div>
+                    <img src="image/juliette.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Bien nourrie </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Fumeuse </li>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="headCard">
+                        <h3> Francheska </h3>
+                        <h4> Gardienne du temps </h4>
+                    </div>
+                    <img src="image/francheska.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Timer challenge sport</li>
+                                                    <li> Objectif : 3min30 de chaise </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Courbature </li>
+                                                    <li> Transpiration </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="hero">
+                    <div class="headCard">
+                        <h3> Steven </h3>
+                        <h4> I'm just gay </h4>
+                    </div>
+                    <img src="image/steven.png" alt="">
+                    <div class="containerP">
+                        <div class="replie"> 
+                            <button class="bouton-deplier"> + </button>
+                        </div>
+                        <div class="deplie container">
+                            <div class="montexte">
+                                <table>
+                                    <tbody>
+                                        <tr> 
+                                            <td> Buffs 
+                                                <ul>
+                                                    <li> Bien nourri </li>
+                                                    <li> Sous caféine </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td> Débuffs 
+                                                <ul>
+                                                    <li> Digestion </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         </section>
         <section class="contact">
@@ -91,13 +654,14 @@
                 <textarea rows="10"placeholder="J'ai hâte de participer au challenge chaise" id="commentaire"></textarea>
             </div>
             <div>
-                <button type="submit">
-                    <img src="/images/envoyer (1).png" height="24px"  width="24px" alt="icône envoyer"> Envoyer
+                <button type="submit">Envoyer
                 </button>
             </div>
             </form>
         </section>
+
     </main>
+
     <footer>
         <p>&copy; 2026 DEV31_ERN 26-01. Tous droits réservés.</p>
     </footer>

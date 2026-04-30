@@ -1,104 +1,201 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo img{
+    width: 30%;
+}
 header{
     display: flex;
-    justify-content:space-between;
-    border: 1px solid black;
-    background-color: chocolate;
-    padding : 1vh
+    justify-content:space-evenly;
+    align-items: center ;
+    background-color: rgb(136, 96, 172);
+    padding : 15px 30px;
 }
-.logo{
-    align-self: flex-start;
-}
+
 #titre{
     align-self: flex-end;
 }
 #titre h1{
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
+    color: white;
 }
 #titre h4{
     font-size: 10px;
     text-align: center;
+    color: white;
 }
 
 .banniere {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
-    border: 1px solid black;
+    background-color: rgb(229, 225, 240);
     row-gap: 0.5px ;
 }
 
 .paragraphe{
     align-self: center;
     font-size: 16px;
+    color:rgb(26, 0, 59);
 }
-main{
-    background-color: azure;
-    border: 1px solid black;
-}
-.grid-formation{
-    display: grid;
-    background-color: burlywood; 
-    border: 1px solid black;
-}
-.grid-stagiaire{
-    background-color: rgb(216, 222, 135); 
-    border: 1px solid black;
-    width: 100%;
-    height:700px;
-}
-.contact h2{
-    text-align : center;
+main {
+    margin: 0;
 }
 
-/* .contact form{
-    width: 100%;
-    background-color: rgb(135, 197, 222); 
-    border: 1px solid black;
-} */
+h2 {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+.h2Formateurs {
+    color: rgb(26, 0, 59);
+}
+
+h3 {
+    margin: 5px;
+    color: rgb(62, 33, 88);
+}
+
+h4 {
+    margin: 5px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(136, 96, 172);
+}
+
+img {
+    width: 195px;
+    border-radius: 10px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: rgb(136, 96, 172);
+    border-radius: 10px;
+    color: rgb(240, 240, 240);
+}
+
+ul {
+    text-align: left;
+    margin-top: 5px;
+    color: rgb(62, 33, 88);
+}
+
+td {
+    color: rgb(62, 33, 88);
+}
+li {
+    font-style: italic;
+    color: rgb(136, 96, 172);
+}
+
+.squad {
+    background-color: rgb(26, 0, 59);
+}
+
+#fullStack {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1267px;
+    padding-bottom: 20px;
+}
+
+.headCard{
+    height: 80px;;
+}
+
+.hero {
+    text-align: center;
+    background-color: rgb(229, 225, 240);
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.formateurs {
+    background-color:rgb(229, 225, 240);
+}
+
+#grid-formation {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1267px;
+    padding-bottom: 20px;
+}
+
+.card-formation{
+    display: flex;
+    text-align: left;
+    background-color: rgb(136, 96, 172);
+    width: 400px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.textCardF {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+p {
+    margin: 5px;
+    color: rgb(230, 216, 238);
+}
+
+/*CSS POUR LE FORMULAIRE DE CONTACT*/
 .contact input[type="text"], .contact select, .contact textarea {
-    width: 100% !important;          /* Pleine largeur */
-    box-sizing: border-box !important; /* Évite le débordement */
+    width: 100%;          /* Pleine largeur */
+    box-sizing: border-box; /* Évite le débordement */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: white;
+    background-color: rgb(229, 225, 240);
+}
+.contact h2{
+    color:rgb(26, 0, 59) ;
 }
 
-/* .contact textarea {
-    resize: vertical;
-} */
+.contact p{
+    color: rgb(26, 0, 59)
+}
 
 .contact button[type="submit"] {
     display: flex;
     align-items: center;
     gap: 8px;             /* Espace entre l'icône et le texte */
-    width: 100%;
-    padding: 10px;
-    background-color: #3a9ad9; /* Bleu comme dans l'image cible */
-    color: white;
+    width: 10%;
+    padding: 5px;
+    background-color: rgb(136, 96, 172); /* Bleu comme dans l'image cible */
+    color: rgb(26, 0, 59);
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     justify-content: center;
 }
 
-form {
-    background-color: rgb(161, 135, 222); 
-    border: 1px solid black;
-    /* display: flex;
-    flex-direction: column;
-    align-content:space-around ;
-    margin :10px; */
+footer {
+    background-color: rgb(136, 96, 172);
+    padding : 2vh;
+    text-align : center;
+    color :rgb(26, 0, 59);
 }
 
-footer{
-    border: 1px solid black;
-    background-color: chocolate;
-    /* padding : 1vh; */
-    text-align: center;
-}
-/* .card-formation {
-    border: 1px solid black;
-    background-color: rgb(180, 30, 210);
-} */
