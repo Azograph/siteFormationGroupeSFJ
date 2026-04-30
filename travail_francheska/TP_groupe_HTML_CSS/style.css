@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid black;
+    background-color: chocolate;
+    padding : 1vh
+}
+.logo{
+    align-self: flex-start;
+}
+#titre{
+    align-self: flex-end;
+}
+#titre h1{
+    font-size: 14px;
+    text-align: center;
+}
+#titre h4{
+    font-size: 10px;
+    text-align: center;
+}
+
+.banniere {
+    background-color: bisque;
+    border: 1px solid black;
+}
+main{
+    background-color: azure;
+    border: 1px solid black;
+}
+.grid-formation{
+    background-color: burlywood; 
+    border: 1px solid black;
+}
+.grid-stagiaire{
+    background-color: rgb(216, 222, 135); 
+    border: 1px solid black;
+    width: 100%;
+    height:700px;
+}
+.contact{
+    background-color: rgb(135, 197, 222); 
+    border: 1px solid black;
+}
+.footer{
+    border: 1px solid black;
+    background-color: chocolate;
+    padding : 3vh
+}
+.card-formation {
+    border: 1px solid black;
+    background-color: rgb(180, 30, 210);
+}
