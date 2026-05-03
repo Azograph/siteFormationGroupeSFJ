@@ -86,11 +86,17 @@ ul {
     text-align: left;
     margin-top: 5px;
     color: rgb(62, 33, 88);
+    font-weight: 400;
 }
 
 td {
     color: rgb(62, 33, 88);
 }
+
+.buffs {
+    font-weight: bold;
+}
+
 li {
     font-style: italic;
     color: rgb(136, 96, 172);
